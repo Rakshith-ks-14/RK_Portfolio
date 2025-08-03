@@ -196,6 +196,6 @@
             }
         ],
 
-        "end_img": ["/images/python.png", "/images/opencv.png", "/images/matplotlib.png", "/images/numpy.png", "/images/pandas.png"]
+        "end_img": ["/images/python.png", "/images/opencv_1.png", "/images/matplotlib_1.png", "/images/numpy_1.png", "/images/pandas_1.png"]
     }
 }
