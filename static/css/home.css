@@ -9,7 +9,6 @@ html, body {
 }
 
 body {
-  display: table;
   width: 100%;
   height: 100%;
   background: radial-gradient(circle, #4c2e00, #4a2500, #471c00, #431300, #3e0a00, #380703, #320504, #2c0205, #250207, #1d0106, #120104, #000000);
@@ -21,6 +20,9 @@ body {
   overflow: hidden;
   background-size: 500%;
   animation: bg-color-change 20s infinite alternate;
+  display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes bg-color-change {
@@ -132,87 +134,65 @@ body {
 }
 
 .profile-container {
-    /* height: 800px;
-    width: 800px; */
-    /* position: absolute; */
-    justify-self: center;
-    align-self: center;
+    justify-self: right;
+    align-self: right;
 }
 
-/* .profile-container div {
-    width: 300px;
-    height: 300px; 
-    border-radius: 50%; 
-    float: right; 
-    background: rgb(56, 56, 56);
-    margin: 16% 15%;
-    position: relative;
-    backdrop-filter: blur(30px);
-} */
-
 .profile-container img {
-    /* margin-bottom: 50%; */
-    margin-left: 15%; 
-    position: absolute;
+    height: 100%;
+    width: auto;
 }
 
 .details-container {
     background: rgba(182, 182, 182, 0.2);
     backdrop-filter: blur(10px);
-    margin-top: 70px;
+    border-top: calc(0.25vh + 0.25vw) solid gray;
+    border-left: calc(0.25vh + 0.25vw) solid gray;
+    border-right: calc(0.25vh + 0.25vw) solid gray;
+    border-bottom: calc(0.25vh + 0.25vw) solid gray;
+    border-radius: calc(1vh + 1vw);
+    width: 80%;
     height: 80%;
-    width: 85%;
-    border-top: 5px solid gray;
-    border-left: 5px solid gray;
-    border-right: 5px solid gray;
-    border-bottom: 5px solid gray;
-    border-radius: 20px;
-    justify-self: center;
-    align-self: center;
 }
 
 .bio-container {
-  margin-left: 10%;
-  margin-top: 5%;
-  position: absolute;
+    position: absolute;
+    padding: 5%;
+    justify-content: left;
+    align-items: left;
+    margin-right: 30%;
 }
 
 .greet {
     font-family: sans-serif;
-    font-size: 25px;
+    font-size: calc(0.8vh + 0.8vw);
     color: rgb(230, 220, 220);
 }
 
 .myname {
     font-family: sans-serif;
-    font-size: 25px;
+    font-size: calc(1.25vh + 1.25vw);
     background: linear-gradient(to right, red, rgb(255, 115, 0));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: -10;
+    margin-top: calc(-0.5vh + -0.5vw);
     font-weight: bold;
-    /* text-shadow: 0 0 55px rgb(255, 115, 0),
-               0 0 55px rgb(151, 68, 0),
-               0 0 55px rgb(0, 0, 0); */
 }
 
 .designation {
     font-family: sans-serif;
-    font-size: 45px;
+    font-size: calc(2.2vh + 2.2vw);
     background: linear-gradient(to right, rgb(97, 0, 0) 10%, rgb(255, 115, 0));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
-    /* text-shadow: 0 0 55px rgb(116, 52, 0); */
-               /* 0 0 55px rgb(116, 52, 0),
-               0 0 55px rgb(85, 38, 0); */
 }
 
 .social-media-container img {
-    margin-top: 20px;
-    height: 25px;
-    width: 25px;
-    margin-inline-end: 50px;
+    margin-top: calc(1vh + 1vw);
+    height: calc(1.25vh + 1.25vw);
+    width: calc(1.25vh + 1.25vw);
+    margin-inline-end: calc(2.25vh + 2.25vw);
 }
 
 .buttons {
@@ -220,34 +200,36 @@ body {
 }
 
 .get-started{
-    margin-right: 20px;
+    margin-right: calc(1vh + 1vw);
     background: linear-gradient(to right, rgb(185, 59, 0) 10%, rgb(255, 115, 0));
     font-family: sans-serif;
     color: rgb(230, 220, 220);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: calc(0.5vh + 0.5vw);
+    padding-bottom: calc(0.5vh + 0.5vw);
+    padding-left: calc(1.5vh + 1.5vw);
+    padding-right: calc(1.5vh + 1.5vw);
     font-weight: bold;
-    border-radius: 10px;
-    margin-top: 50px;
+    border-radius: calc(0.5vh + 0.5vw);
+    margin-top:  calc(2.5vh + 2.5vw);
     text-align: center;
+    font-size: calc(0.8vh + 0.8vw);
 }
 
 .download-cv {
     border-color: rgb(230, 220, 220);
-    border-radius: 10px;
+    border-radius: calc(0.5vh + 0.5vw);
     font-family: sans-serif;
-    margin-top: 50px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 35px;
-    padding-right: 35px;
+    margin-top: calc(2.5vh + 2.5vw);
+    padding-top: calc(0.4vh + 0.4vw);
+    padding-bottom: calc(0.4vh + 0.4vw);
+    padding-left: calc(1.5vh + 1.5vw);
+    padding-right: calc(1.5vh + 1.5vw);
     color: rgb(230, 220, 220);
-    border-width: 2px;
+    border-width: calc(0.1vh + 0.1vw);
     border-style: solid;
     text-align: center;
     font-weight: bold;
+    font-size: calc(0.8vh + 0.8vw);
 }
 
 .achivments {
@@ -255,38 +237,41 @@ body {
 }
 
 .experience {
-    margin-top: 50px;
-    margin-right: 30px;
+    margin-top: calc(2.5vh + 2.5vw);
+    margin-right: calc(1.5vh + 1.5vw);
     border-top: none;
-    border-right: 2px solid rgb(230, 220, 220);
+    border-right: calc(0.1vh + 0.1vw) solid rgb(230, 220, 220);
     border-bottom: none;
-    border-left: 2px solid rgb(230, 220, 220);
-    padding-right: 10px;
-    border-radius: 10px;
-    padding-left: 10px;
+    border-left: calc(0.1vh + 0.1vw) solid rgb(230, 220, 220);
+    padding-right: calc(0.5vh + 0.5vw);
+    border-radius: calc(0.5vh + 0.5vw);
+    padding-left: calc(0.5vh + 0.5vw);
+    font-size: calc(0.8vh + 0.8vw);
 } 
 
 .projects {
-    margin-top: 50px;
-    margin-right: 30px;
+    margin-top: calc(2.5vh + 2.5vw);
+    margin-right: calc(1.5vh + 1.5vw);
     border-top: none;
-    border-right: 2px solid rgb(230, 220, 220);
+    border-right: calc(0.1vh + 0.1vw) solid rgb(230, 220, 220);
     border-bottom: none;
-    border-left: 2px solid rgb(230, 220, 220);
-    padding-right: 10px;
-    border-radius: 10px;
-    padding-left: 10px;
+    border-left: calc(0.1vh + 0.1vw) solid rgb(230, 220, 220);
+    padding-right: calc(0.5vh + 0.5vw);
+    border-radius: calc(0.5vh + 0.5vw);
+    padding-left: calc(0.5vh + 0.5vw);
+    font-size: calc(0.8vh + 0.8vw);
 }
 
 .clients {
-    margin-top: 50px;
+    margin-top: calc(2.5vh + 2.5vw);
     border-top: none;
-    border-right: 2px solid rgb(230, 220, 220);
+    border-right: calc(0.1vh + 0.1vw) solid rgb(230, 220, 220);
     border-bottom: none;
-    border-left: 2px solid rgb(230, 220, 220);
-    padding-right: 10px;
-    border-radius: 10px;
-    padding-left: 10px;
+    border-left: calc(0.1vh + 0.1vw) solid rgb(230, 220, 220);
+    padding-right: calc(0.5vh + 0.5vw);
+    border-radius: calc(0.5vh + 0.5vw);
+    padding-left: calc(0.5vh + 0.5vw);
+    font-size: calc(0.8vh + 0.8vw);
 } 
 
 .achivment-numbers {
@@ -301,10 +286,10 @@ body {
 }
 
 .logo-container {
-  width: 40px;
-  height: 40px;
-  border: 2px solid rgb(230, 220, 220);
-  margin: 20px 20px;
+  width: calc(2vh + 2vw);
+  height: calc(2vh + 2vw);
+  border: calc(0.1vh + 0.1vw) solid rgb(230, 220, 220);
+  margin: calc(1vh + 1vw) calc(1vh + 1vw);
   position: absolute;
   float: right;
   transform: rotate(-45deg);
@@ -312,7 +297,7 @@ body {
 
 .logo-container div{
   background: linear-gradient(to right, red, rgb(255, 115, 0));
-  font-size: 25px;
+  font-size: calc(1.2vh + 1.2vw);
   font-weight: bold;
   text-align: center;
   -webkit-background-clip: text;

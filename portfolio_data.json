@@ -175,52 +175,27 @@
         "project_contents":
         [
             {
-                "name": "",
-                "image": "/images/es_01.jpg",
+                "name": "Image Given For Icon Detection",
+                "image": "/images/id_icon_01.jpg",
                 "p": "Welcome Page designed to give the brief information and functionality about the app. Login Page is to authenticate the user through Email ID and Password. SignUp page is to register the new user to the app by getting their required details. Like First Name, Last Name, Email ID, Employee ID, DOB and Password."
             },
             {
                 "name": "Profile And Menubar",
-                "image": "/images/es_02.jpg",
+                "image": "/images/id_masking_01.png",
                 "p": "Menubar is to show the menu options available, user's profile picture and name as well. The menus are My Profile, Leave Management, Timesheet, Task Tracker, Employee Tasks/Approvals (only for Managers), About and Logout. My Profile shows all details of the user filled during register, also some extra data like Reporting Manager and Project ID(s) the employee is working on. User has control to edit or delete the profile form this app."
             },
             {
                 "name": "Leave Management",
-                "image": "/images/es_03.jpg",
+                "image": "/images/id_cropped_img_01.png",
                 "p": "Leave management feature is to manage employees leaves, suppose an employee want a live then he can update here by filling the required fields From Date, To Date, Reason, Leave Type. After applying the leave the data will appear in Leave Management page and it will notify the reporting manager too."
             },
             {
                 "name": "Leave Management Swipe Operations",
-                "image": "/images/es_04.jpg",
+                "image": "/images/id_compare_01.png",
                 "p": "The leave information appear in card format, option of edit and delete the leave application is provided for the user. To edit the user need to swipe the card towards right if it's not approved then it will take to edit page otherwise not. To delete the user need to swipe the card towards left and same condition applies here as well. There is a feature to indicate the user that the leave application got approved or not. When the user applies leave, then cards right side orange circle will be visible to indicate it's still not approved. If it's showing green means it's approved or it's showing red it's rejected by the Manager."
-            },
-            {
-                "name": "Time Sheet Management",
-                "image": "/images/es_05.jpg",
-                "p": "Timesheet management feature is to manage employees daily work hours of current week. How much hours the employee spent for particular work, and the same swipe operation and conditions will exactly work here as well."
-            },
-            {
-                "name": "Fill Time Sheet",
-                "image": "/images/es_06.jpg",
-                "p": "By filling timesheet the employee can become a billable resource otherwise organisation consider the employee is in bench. To fill timesheet the employee need to enter all the required fields, like Country, State, Project ID (which is already add by admin), Select Date, Work Hour, Type for all 7 days. In case employee worked in weekends there is an option to add weekend too."
-            },
-            {
-                "name": "About",
-                "image": "/images/es_07.jpg",
-                "p": "About page is designed to give information about the App and it's developer team, version and contact details of the team."
-            },
-            {
-                "name": "Employee Activities",
-                "image": "/images/es_08.jpg",
-                "p": "This feature is only available for managers not for normal employees. It allow managers to view their employees timesheet, leave application and tasks assigned to them. Also manager has an option to approve or reject their employees requests."
-            },
-            {
-                "name": "Employee Request Approval",
-                "image": "/images/es_09.jpg",
-                "p": "As already mentions above the manager can approve or deny their employees requests. If manager need to deny the request then need to mention the comment why the request been rejected."
             }
         ],
 
-        "end_img": ["/images/android-studio.png", "/images/kotlin.png", "/images/firebase.png"]
+        "end_img": ["/images/python.png", "/images/opencv.png", "/images/matplotlib.png", "/images/numpy.png", "/images/pandas.png"]
     }
 }

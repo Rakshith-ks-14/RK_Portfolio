@@ -41,7 +41,8 @@
                                 font-family: sans-serif;
                                 animation: slide-in 1s forwards;
                                 animation-timeline: view();
-                                animation-range: entry 0% cover 50%;">
+                                animation-range: entry 0% cover 50%;
+                                font-size: calc(1vh + 1vw);">
                                 {{ content['name'] }}</h2>
                     <a href="/portfolio/{{ content['PID'] }}"><img src="{{ url_for('static', path=content['image']) }}" alt="project_details"></a>
                     <p>{{ content['p'] }}</p>
@@ -54,7 +55,8 @@
                                 font-family: sans-serif;
                                 animation: slide-in 1s forwards;
                                 animation-timeline: view();
-                                animation-range: entry 0% cover 50%;">
+                                animation-range: entry 0% cover 50%;
+                                font-size: calc(1vh + 1vw);">
                                 {{ content['name'] }}</h2>
                     <img src="{{ url_for('static', path=content['image']) }}" alt="project_details">
                     <p>{{ content['p'] }}</p>
@@ -71,7 +73,7 @@
                 <h1>Technologies Used:</h1>
                 <div style="justify-self: center; align-self: center;">
                 {% for img in end_img %}
-                    <img src="{{ url_for('static', path=img) }}" alt="icons">
+                    <img src="{{ url_for('static', path=img) }}" alt="icons" style="height: calc(5vh + 5vw); width: calc(5vh + 5vw);">
                 {% endfor %}
                 </div>
                 <h1>Thank You...!</h1>
