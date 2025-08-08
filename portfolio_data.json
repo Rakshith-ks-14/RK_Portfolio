@@ -177,25 +177,83 @@
             {
                 "name": "Image Given For Icon Detection",
                 "image": "/images/id_icon_01.jpg",
-                "p": "Welcome Page designed to give the brief information and functionality about the app. Login Page is to authenticate the user through Email ID and Password. SignUp page is to register the new user to the app by getting their required details. Like First Name, Last Name, Email ID, Employee ID, DOB and Password."
+                "p": "This is the image given for icon detection like this we can feed as many images as possible to detect the icons. This algorithm will process the images one by one and detect the "
             },
             {
-                "name": "Profile And Menubar",
+                "name": "Image Masking Process",
                 "image": "/images/id_masking_01.png",
-                "p": "Menubar is to show the menu options available, user's profile picture and name as well. The menus are My Profile, Leave Management, Timesheet, Task Tracker, Employee Tasks/Approvals (only for Managers), About and Logout. My Profile shows all details of the user filled during register, also some extra data like Reporting Manager and Project ID(s) the employee is working on. User has control to edit or delete the profile form this app."
+                "p": "Masking helps to detect the area of icons to get masked image, did some preprocessing like after getting the original image first converted it into gray image using cv2. Second taking the average background color and converted it into black to pop the foreground. Third applying threshold on that like otsu and adaptive. Forth step need to do erode and dilate to enhance or open up the icon shape."
             },
             {
-                "name": "Leave Management",
+                "name": "Icon Cropped From Image",
                 "image": "/images/id_cropped_img_01.png",
-                "p": "Leave management feature is to manage employees leaves, suppose an employee want a live then he can update here by filling the required fields From Date, To Date, Reason, Leave Type. After applying the leave the data will appear in Leave Management page and it will notify the reporting manager too."
+                "p": "After masking applied on the original image need to detect contour of the icons to get the x-axis, y-axis, height and width of the contour. After getting those details next step is to crop the image based on that data."
             },
             {
-                "name": "Leave Management Swipe Operations",
+                "name": "Exported Image Details",
+                "image": "/images/id_excel_01.png",
+                "p": "After cropping icons from original image this step is to store that in excel to utilise the data for future analysis. This contains image path, x-axis data, y-axis data, height data and width data."
+            },
+            {
+                "name": "Comparing The Icons",
                 "image": "/images/id_compare_01.png",
-                "p": "The leave information appear in card format, option of edit and delete the leave application is provided for the user. To edit the user need to swipe the card towards right if it's not approved then it will take to edit page otherwise not. To delete the user need to swipe the card towards left and same condition applies here as well. There is a feature to indicate the user that the leave application got approved or not. When the user applies leave, then cards right side orange circle will be visible to indicate it's still not approved. If it's showing green means it's approved or it's showing red it's rejected by the Manager."
+                "p": "Finally exacting the data from excel and comparing with the original image to confirm the extracted icons are in the same coordinates or not."
             }
         ],
 
         "end_img": ["/images/python.png", "/images/opencv_1.png", "/images/matplotlib_1.png", "/images/numpy_1.png", "/images/pandas_1.png"]
+    },
+
+    "services": {
+        "background": "background: radial-gradient(circle, #9d1111, #961314, #8f1616, #871717, #801919, #761719, #6c1518, #621317, #540e14, #450910, #380509, #2c0000);",
+
+        "start_h1": [
+            "Below is a list of services I am providing for number of customers, please scroll down to get more information about my services."
+        ],
+
+        "project_contents":
+        [
+            {
+                "name": "Web Application Design and Development",
+                "image": "/images/web_application.jpg",
+                "p": "I have the skills to design and develop web applications from concept to deployment. This includes creating intuitive user interfaces, implementing responsive designs, and building robust backend systems. I work with modern web technologies such as HTML, CSS, JavaScript for frontend, and Python (Django/FastAPI) for the backend. I also ensure applications are secure, scalable, and optimized for performance, with experience in integrating APIs, managing databases, and deploying applications to cloud platforms."
+            },
+            {
+                "name": "Android Application Development",
+                "image": "/images/andriod_app.jpg",
+                "p": "I have the capability to design and develop Android applications that are user-friendly, efficient, and scalable. My experience includes working with Android Studio, Kotlin, and XML to build intuitive interfaces and implement core functionalities. I follow best practices in mobile UI/UX design, integrate APIs and databases, and ensure performance optimization across various devices. I also handle app testing, debugging, and deployment to the Google Play Store."
+            },
+            {
+                "name": "Image Processing",
+                "image": "/images/image-processing.jpg",
+                "p": "I have experience in image processing, including techniques for enhancing, analyzing, and transforming digital images. I work with tools and libraries such as OpenCV, Pytesseract, and NumPy to perform tasks like filtering, edge detection, object recognition, and image segmentation. My skills also include preprocessing for machine learning models, feature extraction, and working with various image formats to support computer vision applications."
+            },
+            {
+                "name": "Testing Web Application",
+                "image": "/images/web_app_testing.jpg",
+                "p": "I have experience in testing web applications to ensure functionality, usability, performance, and security. I perform both manual and automated testing using tools like Python, Selenium. My process includes writing and executing test cases, identifying bugs, validating fixes, and ensuring cross-browser compatibility. I also work closely with developers to ensure quality assurance throughout the development lifecycle."
+            },
+            {
+                "name": "Data Engineering",
+                "image": "/images/data_engineering.jpg",
+                "p": "I have experience in data engineering, including designing and building scalable data pipelines, transforming raw data into usable formats, and ensuring efficient data storage and retrieval. I work with tools and technologies such as SQL, Python, Apache Spark, and ETL frameworks to process structured and unstructured data. I also manage data workflows, optimize performance, and support analytics and machine learning initiatives by ensuring data quality, consistency, and accessibility."
+            },
+            {
+                "name": "Data Analysis",
+                "image": "/images/data_analysis.png",
+                "p": "I have experience in data analysis, including collecting, cleaning, and interpreting data to generate actionable insights. I use tools like Python (Pandas, NumPy, Matplotlib), SQL, Excel, Tableau, and Power BI to perform statistical analysis, create interactive dashboards, and visualize trends. My work focuses on identifying patterns, solving business problems, and presenting findings in a clear and impactful way to support data-driven decision-making."
+            },
+            {
+                "name": "Designing Frameworks",
+                "image": "/images/design_framework.png",
+                "p": "I have the capability to design and develop custom frameworks tailored to specific project needs. This includes defining architecture, establishing reusable components, and setting up scalable and maintainable structures for development. I work with various programming languages and tools, ensuring that the frameworks I build enhance productivity, enforce best practices, and support long-term growth and flexibility in software projects."
+            }
+        ],
+
+        "end_h1": ["Any Of My Skills/Services Matching your New Requirement/Project Please Contact Me.", "Thank You...!"]
+    },
+
+    "about_me": {
+        "background": "background-image: radial-gradient(circle, #763e1b, #703a19, #6a3717, #653316, #5f3014, #5a2a16, #542417, #4d1f18, #43181b, #37121b, #2b0e1a, #1f0817);"
     }
 }

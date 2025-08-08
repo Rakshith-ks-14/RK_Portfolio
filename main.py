@@ -28,7 +28,12 @@ async def porfolio_page(request: Request):
 
 @app.get('/services')
 async def services_page(request: Request):
-    return template.TemplateResponse("basic.html", {'request': request, 'page': 'services'})
+    project_data = read_json_data()['services']
+    return template.TemplateResponse("basic.html", {'request': request, 'page': 'services',
+                                                    'start_h1': project_data['start_h1'],
+                                                    'project_contents': project_data['project_contents'],
+                                                    'end_h1': project_data['end_h1'],
+                                                    'background': project_data['background']})
 
 @app.get('/portfolio/{pid}')
 async def get_project_details_by_id(request: Request, pid: str):
@@ -38,6 +43,12 @@ async def get_project_details_by_id(request: Request, pid: str):
                                                     'project_contents': project_data['project_contents'],
                                                     'end_img': project_data['end_img'],
                                                     'background': project_data['background']})
+
+@app.get('/aboutme')
+async def about_me(request: Request):
+    project_data = read_json_data()['about_me']
+    return template.TemplateResponse("about_me.html", {'request': request, 'page': 'about_me',
+                                                       'background': project_data['background']})
 
 def read_json_data():
     file_path = os.path.join(os.getcwd(), 'portfolio_data.json')

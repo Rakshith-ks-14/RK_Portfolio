@@ -17,7 +17,11 @@
         {% else %}
         <div class="services"><a href="/services">Services</a></div>
         {% endif %}
-        <div class="aboutme"><a href="#">About me</a></div>
+        {% if page == "about_me" %}
+        <div class="aboutme"><a href="/aboutme" style="color: rgb(255, 115, 0);">About me</a></div>
+        {% else %}
+        <div class="services"><a href="/aboutme">About me</a></div>
+        {% endif %}
         {% if page == "portfolio" %}
         <div class="portfolio"><a href="/portfolio" style="color: rgb(255, 115, 0);">Portfolio</a></div>
         {% else %}
@@ -65,7 +69,7 @@
             {% endfor %}
 
         <div class="tag-line-end">
-            {% if page == "portfolio" %}
+            {% if page == "portfolio" or page == "services" %}
                 {% for h1 in end_h1 %}
                     <h1>{{ h1 }}</h1>
                 {% endfor %}

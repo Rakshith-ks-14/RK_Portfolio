@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="{{ url_for('static', path='/css/about_m.css') }}">
+<title>About Me</title>
+
+<body style="{{ background }}
+            background-size: 500%;
+            animation: bg-animation 20s infinite alternate;">
+    <div class="container">
+        <div class="logo-container">
+            <div>RK</div>
+        </div>
+
+        <div class="nav-bar-container">
+            <div class="home"><a href="/" onclick="switchColors(this);">Home</a></div>
+            {% if page == "services" %}
+            <div class="services"><a href="/services" style="color: rgb(255, 115, 0);">Services</a></div>
+            {% else %}
+            <div class="services"><a href="/services">Services</a></div>
+            {% endif %}
+            {% if page == "about_me" %}
+            <div class="aboutme"><a href="/aboutme" style="color: rgb(255, 115, 0);">About me</a></div>
+            {% else %}
+            <div class="services"><a href="/aboutme">About me</a></div>
+            {% endif %}
+            {% if page == "portfolio" %}
+            <div class="portfolio"><a href="/portfolio" style="color: rgb(255, 115, 0);">Portfolio</a></div>
+            {% else %}
+            <div class="portfolio"><a href="/portfolio" onclick="switchColors(this);">Portfolio</a></div>
+            {% endif %}
+            <div class="contactme"><a href="#">Contact me</a></div>
+        </div>
+    </div>
+</body>
